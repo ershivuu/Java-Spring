@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.universal.pojo.Product" 
+	table="product">
+		<id name="id" column="pid">
+			<generator class="identity"></generator>
+		</id>
+		
+		<property name="name" column="pname"
+		type="string"></property>
+		
+		<property name="price" column="price"
+		type="int"></property>
+		
+		<property name="qty" column="qty"
+		type="int"></property>
+	</class>
+</hibernate-mapping>
